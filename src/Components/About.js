@@ -1,0 +1,42 @@
+import React from "react";
+import AboutBackground from "../Assets/about-background.png";
+import AboutBackgroundImage from "../Assets/about-background-image.png";
+import { BsFillPlayCircleFill } from "react-icons/bs";
+
+const About = () => {
+  return (
+    <div className="about-section-container">
+      <div className="about-background-image-container">
+        <img src={AboutBackground} alt="" />
+      </div>
+      <div className="about-section-image-container">
+        <img src={AboutBackgroundImage} alt="" />
+      </div>
+      <div className="about-section-text-container">
+        <p className="primary-subheading">About</p>
+        <h1 className="primary-heading">
+          Food Is An Important Part Of A Balanced Diet
+        </h1>
+        <p className="primary-text">
+          Enjoy meals that not only delight your taste buds but also nourish
+          your body. Our chefs craft every dish with fresh, wholesome
+          ingredients to support a healthy lifestyle.
+        </p>
+        <p className="primary-text">
+          From vibrant salads to hearty main courses, we offer a variety of
+          options to suit every preference. Order now and discover how delicious
+          healthy eating can be.
+        </p>
+
+        <div className="about-buttons-container">
+          <button className="secondary-button">Learn More</button>
+          <button className="watch-video-button">
+            <BsFillPlayCircleFill /> Watch Video
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default About;
